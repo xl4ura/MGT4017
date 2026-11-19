@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover your personal beauty style with MirrorMe Beauty. Explore makeup inspiration and personalised recommendations.">
+  <title>MirrorMe Beauty | Beauty, But Personal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="MirrorMe Beauty home">
+      MirrorMe Beauty
+      <span>BEAUTY, BUT PERSONAL</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#try">Virtual Try-On</a>
+      <a href="#match">Beauty Finder</a>
+      <a href="#collection">My Collection</a>
+      <a href="#shop">Shop</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR BEAUTY. YOUR WAY.</p>
+        <h1>Meet the makeup that feels like you.</h1>
+        <p>Discover your perfect beauty look with personalised recommendations, virtual makeup inspiration and products chosen around you.</p>
+        <a class="button-link" href="#match">Find Your Glow ✨</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=900" alt="Beauty editorial portrait">
+    </section>
+
+    <section class="intro">
+      <p class="eyebrow">A LITTLE MORE PERSONAL</p>
+      <h2>Beauty made for you</h2>
+      <p class="subtitle">Everything you need to explore, experiment and feel confident in your own style.</p>
+      <div class="features">
+        <article class="card">
+          <h3>♡ Try Before You Buy</h3>
+          <p>Explore different makeup looks and shades before choosing your next products.</p>
+        </article>
+        <article class="card">
+          <h3>✧ Your Beauty Match</h3>
+          <p>Discover makeup recommendations based on your preferences and budget.</p>
+        </article>
+        <article class="card">
+          <h3>♡ Love What You Own</h3>
+          <p>Find new ways to use your existing makeup instead of constantly buying more.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pink-section" id="try">
+      <p class="eyebrow">YOUR PERSONAL BEAUTY EXPERIENCE</p>
+      <h2>Find your beauty match</h2>
+      <p class="subtitle">Tell us a little about your style and discover a look you might love.</p>
+      <div class="trybox" id="match">
+        <label for="style">What makeup style do you prefer?</label>
+        <select id="style">
+          <option>Natural and glowing</option>
+          <option>Soft glam</option>
+          <option>Full glam</option>
+          <option>Minimal everyday makeup</option>
+        </select>
+
+        <label for="budget">What is your beauty budget?</label>
+        <select id="budget">
+          <option>Under £20</option>
+          <option>£20–£40</option>
+          <option>£40–£60</option>
+          <option>£60+</option>
+        </select>
+
+        <button type="button" id="find-look-button">Discover My Look ✨</button>
+        <div class="result" id="result" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section id="collection">
+      <p class="eyebrow">MAKE THE MOST OF YOUR MAKEUP</p>
+      <h2>My Makeup Collection</h2>
+      <p class="subtitle">You don't always need something new. Sometimes you just need a new way to use what you have.</p>
+      <div class="card collection-card">
+        <h3>What's already in your makeup bag?</h3>
+        <label class="visually-hidden" for="owned">Makeup products you already own</label>
+        <input id="owned" type="text" placeholder="e.g. mascara, blush, lip gloss">
+        <button type="button" id="suggest-button">Find a new look</button>
+        <div class="result" id="owned-result" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section class="pink-section" id="shop">
+      <p class="eyebrow">A FEW BEAUTY FAVOURITES</p>
+      <h2>Shop your glow</h2>
+      <p class="subtitle">Explore the essentials to help create your favourite looks.</p>
+      <div class="products">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=600" alt="Lipstick product">
+          <h3>Everyday Lip Colour</h3>
+          <p>Find a shade that feels like you.</p>
+          <strong>From £12</strong>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600" alt="Makeup products">
+          <h3>Glow Essentials</h3>
+          <p>Your everyday beauty favourites.</p>
+          <strong>From £18</strong>
+        </article>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600" alt="Makeup collection">
+          <h3>Beauty Starter Kit</h3>
+          <p>Everything you need to get started.</p>
+          <strong>From £25</strong>
+        </article>
+      </div>
+      <p class="small-note">Sample product display – products are illustrative and not available for purchase.</p>
+    </section>
+
+    <section class="about">
+      <p class="eyebrow">GET TO KNOW US</p>
+      <h2>Beauty is personal.</h2>
+      <p class="subtitle">At MirrorMe Beauty, we believe everyone deserves to feel confident in their own skin. Our idea combines beauty and technology to make discovering makeup easier, more personal and more affordable.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-logo">MirrorMe Beauty</div>
+    <p>Your beauty. Your way.</p>
+    <p><a href="#home">Home</a> · <a href="#shop">Shop</a> · <a href="#collection">My Collection</a></p>
+    <p>© 2026 MirrorMe Beauty. All rights reserved.</p>
+  </footer>
+</body>
+</html>
